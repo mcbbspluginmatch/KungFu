@@ -10,6 +10,8 @@ import java.sql.Statement;
 import me.ram.kungfu.database.TypeField;
 
 public class SQLUtil {
+
+    // ¿É×¢Èë£¬¶ñÐÔ BUG ¡ª¡ª 754503921
 	
 	private String host;
 	private String port;

@@ -12,6 +12,8 @@ import me.ram.kungfu.database.MySQL;
 import me.ram.kungfu.storage.PlayerStorage;
 
 public class PlayerData {
+
+	// 同步数据库调用 —— 754503921
 	
 	private MySQL mysql;
 	

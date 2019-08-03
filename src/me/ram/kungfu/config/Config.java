@@ -24,7 +24,7 @@ import me.ram.kungfu.storage.PlayerStorage;
 import me.ram.kungfu.utils.ColorUtil;
 
 public class Config {
-	
+	// ¹æ·¶ÃüÃû ¡ª¡ª 754503921
 	public static boolean update_check;
 	public static boolean mysql_enabled;
 	public static String mysql_host;
