@@ -121,6 +121,7 @@ public class Config {
 		menu_item_state_enabled = ColorUtil.color(config.getString("menu.item_state.enabled"));
 		menu_item_state_disable = ColorUtil.color(config.getString("menu.item_state.disable"));
 		menu_manage_lore = ColorUtil.listcolor(config.getStringList("menu.manage_lore"));
+		// 类型推断被吃了吗 - a39
 		kungfu_enableds = new ArrayList<KungFuType>();
 		kungfu_names = new HashMap<KungFuType, String>();
 		kungfu_items = new HashMap<KungFuType, ItemStack>();
@@ -146,6 +147,7 @@ public class Config {
 					}
 				}
 				if (type.equals(KungFuType.Stick)) {
+					// 类型推断被吃了吗 - a39
 					kungfu_stick_level_damage = new HashMap<Integer, Double>();
 					for (int d = 1; d < 4; d ++) {
 						kungfu_stick_level_damage.put(d, config.getDouble("kungfu." + type.toString() + ".level." + d + ".damage"));

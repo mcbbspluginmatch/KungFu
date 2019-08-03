@@ -196,6 +196,7 @@ public class KungFu extends JavaPlugin {
 	// .ordinal()做Key不行么
 	// 写进 enum 的构造方法里不行么 —— 754503921
 	public Map<KungFuType, Integer> getFullLevel() {
+		// 类型推断被吃了吗  我怀疑你是上古程序员 - a39
 		Map<KungFuType, Integer> fulllevel = new HashMap<KungFuType, Integer>();
 		fulllevel.put(KungFuType.Boxing, 3);
 		fulllevel.put(KungFuType.Dart, 3);

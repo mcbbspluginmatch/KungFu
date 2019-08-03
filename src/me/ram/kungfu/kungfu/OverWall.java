@@ -25,7 +25,7 @@ import me.ram.kungfu.config.Config;
 import me.ram.kungfu.storage.PlayerStorage;
 
 public class OverWall implements Listener {
-	
+	// 类型推断被吃了吗 - a39
 	private Map<UUID, Long> sneakinterval = new HashMap<UUID, Long>();
 	private Map<UUID, BukkitTask> players = new HashMap<UUID, BukkitTask>();
 	

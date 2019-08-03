@@ -14,7 +14,7 @@ import me.ram.kungfu.KungFuType;
 import me.ram.kungfu.KungFu;
 
 public class PlayerStorage {
-	
+	// 类型推断被吃了吗 - a39
 	private static Map<UUID, Map<String, Integer>> level = new HashMap<UUID, Map<String, Integer>>();
 	private static Map<UUID, List<String>> disable = new HashMap<UUID, List<String>>();
 	
