@@ -37,15 +37,15 @@ public class KungFu extends JavaPlugin {
 	
 	public void onEnable() {
 		instance = this;
-    	Bukkit.getConsoleSender().sendMessage("¡ìf========================================");
-        Bukkit.getConsoleSender().sendMessage("¡ì7");
-        Bukkit.getConsoleSender().sendMessage("                 ¡ìbKungFu");
-        Bukkit.getConsoleSender().sendMessage("¡ì7");
-        Bukkit.getConsoleSender().sendMessage(" ¡ìa°æ±¾: " + KungFu.getVersion());
-        Bukkit.getConsoleSender().sendMessage("¡ì7");
-        Bukkit.getConsoleSender().sendMessage(" ¡ìa×÷Õß: Ram");
-        Bukkit.getConsoleSender().sendMessage("¡ì7");
-        Bukkit.getConsoleSender().sendMessage("¡ìf========================================");
+    	Bukkit.getConsoleSender().sendMessage("Â§f========================================");
+        Bukkit.getConsoleSender().sendMessage("Â§7");
+        Bukkit.getConsoleSender().sendMessage("                 Â§bKungFu");
+        Bukkit.getConsoleSender().sendMessage("Â§7");
+        Bukkit.getConsoleSender().sendMessage(" Â§aç‰ˆæœ¬: " + KungFu.getVersion());
+        Bukkit.getConsoleSender().sendMessage("Â§7");
+        Bukkit.getConsoleSender().sendMessage(" Â§aä½œè€…: Ram");
+        Bukkit.getConsoleSender().sendMessage("Â§7");
+        Bukkit.getConsoleSender().sendMessage("Â§f========================================");
         init();
 		menu = new Menu();
 		playerdata = new PlayerData();
@@ -54,36 +54,36 @@ public class KungFu extends JavaPlugin {
 	
 	private void init() {
 		String prefix = "[" + this.getDescription().getName() + "] ";
-		Bukkit.getConsoleSender().sendMessage(prefix + "¡ìf¿ªÊ¼¼ÓÔØ²å¼ş...");
+		Bukkit.getConsoleSender().sendMessage(prefix + "Â§få¼€å§‹åŠ è½½æ’ä»¶...");
     	try {
             Config.loadConfig();
         } catch (Exception e) {
-        	Bukkit.getConsoleSender().sendMessage(prefix + "¡ìc´íÎó: ¡ìfÅäÖÃÎÄ¼ş¼ÓÔØÊ§°Ü£¡");
-        	Bukkit.getConsoleSender().sendMessage(prefix + "¡ìc²å¼ş¼ÓÔØÊ§°Ü£¡");
+        	Bukkit.getConsoleSender().sendMessage(prefix + "Â§cé”™è¯¯: Â§fé…ç½®æ–‡ä»¶åŠ è½½å¤±è´¥ï¼");
+        	Bukkit.getConsoleSender().sendMessage(prefix + "Â§cæ’ä»¶åŠ è½½å¤±è´¥ï¼");
         	Bukkit.getPluginManager().disablePlugin(instance);
         	return;
         }
         try {
-        	Bukkit.getConsoleSender().sendMessage(prefix + "¡ìfÕıÔÚ×¢²á¼àÌıÆ÷...");
+        	Bukkit.getConsoleSender().sendMessage(prefix + "Â§fæ­£åœ¨æ³¨å†Œç›‘å¬å™¨...");
             registerEvents();
-            Bukkit.getConsoleSender().sendMessage(prefix + "¡ìa¼àÌıÆ÷×¢²á³É¹¦£¡");
+            Bukkit.getConsoleSender().sendMessage(prefix + "Â§aç›‘å¬å™¨æ³¨å†ŒæˆåŠŸï¼");
         } catch (Exception e) {
-        	Bukkit.getConsoleSender().sendMessage(prefix + "¡ìc´íÎó: ¡ìf¼àÌıÆ÷×¢²áÊ§°Ü£¡");
-        	Bukkit.getConsoleSender().sendMessage(prefix + "¡ìc²å¼ş¼ÓÔØÊ§°Ü£¡");
+        	Bukkit.getConsoleSender().sendMessage(prefix + "Â§cé”™è¯¯: Â§fç›‘å¬å™¨æ³¨å†Œå¤±è´¥ï¼");
+        	Bukkit.getConsoleSender().sendMessage(prefix + "Â§cæ’ä»¶åŠ è½½å¤±è´¥ï¼");
         	Bukkit.getPluginManager().disablePlugin(instance);
         	return;
         }
         try {
-        	Bukkit.getConsoleSender().sendMessage(prefix + "¡ìfÕıÔÚ×¢²áÖ¸Áî...");
+        	Bukkit.getConsoleSender().sendMessage(prefix + "Â§fæ­£åœ¨æ³¨å†ŒæŒ‡ä»¤...");
     		Bukkit.getPluginCommand("kungfu").setExecutor(new Commands());
-            Bukkit.getConsoleSender().sendMessage(prefix + "¡ìaÖ¸Áî×¢²á³É¹¦£¡");
+            Bukkit.getConsoleSender().sendMessage(prefix + "Â§aæŒ‡ä»¤æ³¨å†ŒæˆåŠŸï¼");
         } catch (Exception e) {
-        	Bukkit.getConsoleSender().sendMessage(prefix + "¡ìc´íÎó: ¡ìfÖ¸Áî×¢²áÊ§°Ü£¡");
-        	Bukkit.getConsoleSender().sendMessage(prefix + "¡ìc²å¼ş¼ÓÔØÊ§°Ü£¡");
+        	Bukkit.getConsoleSender().sendMessage(prefix + "Â§cé”™è¯¯: Â§fæŒ‡ä»¤æ³¨å†Œå¤±è´¥ï¼");
+        	Bukkit.getConsoleSender().sendMessage(prefix + "Â§cæ’ä»¶åŠ è½½å¤±è´¥ï¼");
         	Bukkit.getPluginManager().disablePlugin(instance);
         	return;
         }
-        Bukkit.getConsoleSender().sendMessage(prefix + "¡ìa²å¼ş¼ÓÔØ³É¹¦£¡");
+        Bukkit.getConsoleSender().sendMessage(prefix + "Â§aæ’ä»¶åŠ è½½æˆåŠŸï¼");
         try {
         	new Metrics(this);
         }catch (Exception e) {}
@@ -193,6 +193,7 @@ public class KungFu extends JavaPlugin {
         return matcher.find();
     }
 	
+	// .ordinal()åšKeyä¸è¡Œä¹ˆ
 	public Map<KungFuType, Integer> getFullLevel() {
 		Map<KungFuType, Integer> fulllevel = new HashMap<KungFuType, Integer>();
 		fulllevel.put(KungFuType.Boxing, 3);
