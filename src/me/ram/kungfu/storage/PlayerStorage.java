@@ -15,6 +15,7 @@ import me.ram.kungfu.KungFu;
 
 public class PlayerStorage {
 	// 类型推断被吃了吗 - a39
+	// 后面的类型完全可以省略(难道IDE没给你黄色叹号么) —— 星空
 	private static Map<UUID, Map<String, Integer>> level = new HashMap<UUID, Map<String, Integer>>();
 	private static Map<UUID, List<String>> disable = new HashMap<UUID, List<String>>();
 	
